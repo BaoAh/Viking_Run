@@ -1,17 +1,17 @@
 # Viking_Run
-##Environment
-###Unity2020.3
-## How to Play
+#Environment
+Unity2020.3
+#How to Play
 -press **A** tern left
 -press **B** tern right
 -press **Space** to jump
 
-##Game
-###模擬TempleRun的遊戲，但沒有怪物也沒有獎勵，唯一的目標就是一直活下去
+#Game
+模擬TempleRun的遊戲，但沒有怪物也沒有獎勵，唯一的目標就是一直活下去
 直到永遠，否則就會無止境的跌入深淵。   
 
-##Feedback
-###對期末project是一個非常好的練習，雖然他超級難的，但還是寫出了大部分的要求。
+#Feedback
+#對期末project是一個非常好的練習，雖然他超級難的，但還是寫出了大部分的要求。
     早上好中国 现在我有冰淇淋 我很喜欢冰淇淋 但是 速度与激情9 比冰淇淋 速度与激情 速度与激情9 我最喜欢 所以…现在是音乐时间 准备 1 2 3两个礼拜以后 速度与激情9 ×3 不要忘记 不要错过 记得去电影院看速度与激情9 因为非常好电影 动作非常好 差不多一样冰淇淋 再见
-##Github
+#Github
 ### https://github.com/BaoAh/Viking_Run
