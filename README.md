@@ -4,7 +4,7 @@ Unity2020.3
 ## How to Play
 - press **A** turn left
 - press **B** turn right
-- press **Space** to jump
+- press **Space** long to jump high
 
 ## Game
 ### 模擬TempleRun的遊戲，但沒有怪物也沒有獎勵，唯一的目標就是一直活下去

@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
         turnLeft = Input.GetKeyDown(KeyCode.A);
         turnRight = Input.GetKeyDown(KeyCode.D);
-        jump = Input.GetKeyDown(KeyCode.S);
+        jump = Input.GetKeyDown(KeyCode.Space);
 
         if (turnLeft)
             transform.Rotate(new Vector3(0f, -90f, 0f));
@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
         jump = false;
 
-        if ((onGround == true) && (Input.GetKey(KeyCode.S)))
+        if ((onGround == true) && (Input.GetKey(KeyCode.Space)))
         {
             onGround = false;
             transformRigidbody.AddForce(jumpDir * jumpForceAmmount);
