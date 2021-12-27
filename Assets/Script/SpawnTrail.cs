@@ -7,8 +7,8 @@ public class SpawnTrail : MonoBehaviour
     public GameObject tileToSpawn;
     public GameObject referenceObject;
     public float timeOffset = 0.4f;
-    public float distanceBetweenTiles = 5.0F;
-    public float randomValue = 0.8f;
+    public float distanceBetweenTiles = 7.0F;
+    public float randomValue = 0.6f;
     private Vector3 previousTilePosition;
     private float startTime;
     private Vector3 direction, mainDirection = new Vector3(0, 0, 1), otherDirection = new Vector3(1, 0, 0);
@@ -19,6 +19,7 @@ public class SpawnTrail : MonoBehaviour
     {
         previousTilePosition = referenceObject.transform.position;
         startTime = Time.time;
+        TheFirstFloor();
     }
 
     // Update is called once per frame
@@ -53,5 +54,13 @@ public class SpawnTrail : MonoBehaviour
         }
 
         
+    }
+    private void TheFirstFloor()
+    {
+        direction = mainDirection;
+        Vector3 spawnPos = previousTilePosition + distanceBetweenTiles * direction;
+        startTime = Time.time;
+        GameObject floor = Instantiate(tileToSpawn, spawnPos, Quaternion.Euler(0, 0, 0));
+        previousTilePosition = spawnPos;
     }
 }

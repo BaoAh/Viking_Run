@@ -2,13 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Collider))]
+
+[RequireComponent(typeof(Animator))]
+
 public class PlayerMovement : MonoBehaviour
 {
+
+
+
     private bool turnLeft, turnRight,jump;
     public float speed = 10.0f;
     private float movingSpeed = 7f;
 
-    public float jumpForceAmmount;
+    public float jumpForceAmmount = 10;
     private Vector3 jumpDir = new Vector3(0, 1, 0);
     private bool onGround = true, run = false;
     Animator animator;
@@ -33,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
         turnLeft = Input.GetKeyDown(KeyCode.A);
         turnRight = Input.GetKeyDown(KeyCode.D);
-        jump = Input.GetKeyDown(KeyCode.Space);
+        jump = Input.GetKeyDown(KeyCode.S);
 
         if (turnLeft)
             transform.Rotate(new Vector3(0f, -90f, 0f));
@@ -42,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
         jump = false;
 
-        if ((onGround == true) && (Input.GetKey(KeyCode.Space)))
+        if ((onGround == true) && (Input.GetKey(KeyCode.S)))
         {
             onGround = false;
             transformRigidbody.AddForce(jumpDir * jumpForceAmmount);
@@ -62,4 +71,6 @@ public class PlayerMovement : MonoBehaviour
         //myCharacterController.SimpleMove(new Vector3(0f, 0f, 0f));
         //myCharacterController.Move(transform.forward * speed * Time.deltaTime);
     }
+
+
 }
