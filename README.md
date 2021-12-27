@@ -2,8 +2,8 @@
 ## Environment
 Unity2020.3
 ## How to Play
-- press **A** tern left
-- press **B** tern right
+- press **A** turn left
+- press **B** turn right
 - press **Space** to jump
 
 ## Game
